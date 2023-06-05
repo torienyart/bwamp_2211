@@ -1,9 +1,50 @@
-<%= audio_tag "trial.mp3", class: "audio-play" %>
-<p class="btn btn-primary audioButton" id="play_button">Play</p>
+<br>
+  <div class="text-center">
+    <h1> Turing BWAMP Board </h1>
+  </div>
+<br>
+<div class="bg-image" 
+     style="background-image: url('https://github.com/torienyart/bwamp_2211/assets/117066950/e30f287a-51db-4018-a940-da5c013e00ed');
+            height: 500vh">
+
+  <br>
+  <br>
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <button class="btn btn-dark" id="play_button">
+          <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/e5af5d3a-7d93-4163-8463-9b5165045432" width="250">
+          <p> What da dog doin'?</p>
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-dark" id="play_button_2">
+          <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/e5af5d3a-7d93-4163-8463-9b5165045432" width="250">
+          <p> Trial </p>
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-dark">
+          <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/e5af5d3a-7d93-4163-8463-9b5165045432" width="250">
+          <p> Test </p>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# <p class="btn btn-primary audioButton" id="play_button">What da dog doin'</p> %>
 
 <script>
   document.getElementById("play_button").addEventListener("click", function(event) {
     var audio = new Audio("play_audio");
+    audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("play_button_2").addEventListener("click", function(event) {
+    var audio = new Audio("play_audio_trial");
     audio.play();
   });
 </script>
