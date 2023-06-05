@@ -16,10 +16,19 @@
   });
 </script>
 <br>
+
 <p class="btn btn-primary audioButton" id="only_god_knows">Now, Only God Knows</p>
 <script>
   document.getElementById("only_god_knows").addEventListener("click", function(event) {
     var audio = new Audio("only_god_knows");
+    audio.play();
+  });
+</script>
+<br>
+<p class="btn btn-primary audioButton" id="tall_socks">Mike Dao doesn't like tall socks</p>
+<script>
+  document.getElementById("tall_socks").addEventListener("click", function(event) {
+    var audio = new Audio("tall_socks");
     audio.play();
   });
 </script>
