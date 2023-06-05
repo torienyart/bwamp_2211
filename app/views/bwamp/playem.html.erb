@@ -1,12 +1,9 @@
 <%= audio_tag "trial.mp3", class: "audio-play" %>
-<p class="btn btn-primary audioButton">Play</p>
-
-
-<%= button_to "playem", play_audio_path, method: :get, remote: true, target: "_blank" %>
+<p class="btn btn-primary audioButton" id="play_button">Play</p>
 
 <script>
-  document.addEventListener("ajax:success", function(event) {
-    var audio = new Audio('trial.mp3') %>");
+  document.getElementById("play_button").addEventListener("click", function(event) {
+    var audio = new Audio("play_audio");
     audio.play();
   });
 </script>
