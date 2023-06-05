@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   root "bwamp#playem"
 
   get '/play_audio', to: 'audios#play'
+  get '/whats_the_name', to: 'audios#whats_the_name'
+  get '/only_god_knows', to: 'audios#only_god_knows'
+  get '/tall_socks', to: 'audios#tall_socks'
   get '/take_a_pom', to: 'audios#take_a_pom'
   get '/jeans_are_leg_prisons', to: 'audios#jeans_are_leg_prisons'
   get '/yes_thank_you', to: 'audios#yes_thank_you'
