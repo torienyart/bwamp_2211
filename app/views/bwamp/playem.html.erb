@@ -1,5 +1,79 @@
-<%= audio_tag "trial.mp3", class: "audio-play" %>
-<p class="btn btn-primary audioButton" id="play_button">Play</p>
+<br>
+  <div class="container-fluid text-center">
+    <h1>
+      <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/7818c31a-80f7-420e-abf4-829b5e4c9650" width="75">
+      Turing BWAMP Board 
+      <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/7818c31a-80f7-420e-abf4-829b5e4c9650" width="75">
+    </h1>
+  </div>
+<br>
+<div class="bg-image" 
+     style="background-image: url('https://github.com/torienyart/bwamp_2211/assets/117066950/e30f287a-51db-4018-a940-da5c013e00ed');
+            height: 500vh">
+
+  <br>
+  <br>
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <ul>
+          <li>
+            <button class="btn btn-dark" id="play_button">
+              <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/e5af5d3a-7d93-4163-8463-9b5165045432" width="250">
+              <p> What da dog doin'?</p>
+            </button>
+          </li>
+          <br>
+          <li>
+            <button class="btn btn-dark" id="take_a_pom">
+              <img src="https://github.com/torienyart/bwamp_2211/assets/117066950/e5af5d3a-7d93-4163-8463-9b5165045432" width="250">
+              <p> Take a POM</p>
+            </button>
+          </li>
+          <br>
+         </ul
+      </div>
+      <div class="col">
+        <ul>
+          <li>
+            <button class="btn btn-dark" id="abdul-um-cool">
+              <img src="https://github.com/torienyart/bwamp_2211/assets/114954379/f6612714-83f4-47e8-b74b-752fa25b9fb1" width="250">
+              <p> Ummm.... cooool - Abdul </p>
+            </button>
+          </li>
+          <br>
+          <li>
+            <button class="btn btn-dark" id="jeans_are_leg_prisons">
+              <img src="https://github.com/torienyart/bwamp_2211/assets/114954379/f6612714-83f4-47e8-b74b-752fa25b9fb1" width="250">
+              <p> Jeans are leg prisons - Mike </p>
+            </button>
+          </li>
+          <br>
+         </ul
+      </div>
+      <div class="col">
+        <ul>
+          <li>
+            <button class="btn btn-dark" id="i-would-love-mike">
+              <img src="https://github.com/torienyart/bwamp_2211/assets/114954379/a5f91c93-2b27-4f6f-a8e1-5415f6b6ffda" width="250">
+              <p> I would love it - Mike </p>
+            </button>
+          </li>
+          <br>
+          <li>
+            <button class="btn btn-dark" id="yes_thank_you">
+              <img src="https://github.com/torienyart/bwamp_2211/assets/114954379/a5f91c93-2b27-4f6f-a8e1-5415f6b6ffda" width="250">
+              <p> Yes, Thank you. - Mel </p>
+            </button>
+          </li>
+          <br>
+         </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# <p class="btn btn-primary audioButton" id="play_button">What da dog doin'</p> %>
 
 <script>
   document.getElementById("play_button").addEventListener("click", function(event) {
@@ -29,6 +103,48 @@
 <script>
   document.getElementById("tall_socks").addEventListener("click", function(event) {
     var audio = new Audio("tall_socks");
+    audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("take_a_pom").addEventListener("click", function(event) {
+    var audio = new Audio("take_a_pom");
+      audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("abdul-um-cool").addEventListener("click", function(event) {
+    var audio = new Audio("abdul-um-cool");
+    audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("jeans_are_leg_prisons").addEventListener("click", function(event) {
+    var audio = new Audio("jeans_are_leg_prisons");
+    audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("yes_thank_you").addEventListener("click", function(event) {
+    var audio = new Audio("yes_thank_you");
+    audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("what_is_time").addEventListener("click", function(event) {
+    var audio = new Audio("what_is_time");
+    audio.play();
+  });
+</script>
+
+<script>
+  document.getElementById("i-would-love-mike").addEventListener("click", function(event) {
+    var audio = new Audio("i-would-love-mike");
     audio.play();
   });
 </script>
