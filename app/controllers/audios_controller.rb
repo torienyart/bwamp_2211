@@ -19,4 +19,9 @@ class AudiosController < ApplicationController
     audio_path = Rails.root.join('app', 'assets', 'audios', 'yes_thank_you.mp3')
     send_file audio_path, type: 'audio/mpeg', disposition: 'inline'
   end
+
+  def what_is_time
+    audio_path = Rails.root.join('app', 'assets', 'audios', 'what_is_time.mp3')
+    send_file audio_path, type: 'audio/mpeg', disposition: 'inline'
+  end
 end
